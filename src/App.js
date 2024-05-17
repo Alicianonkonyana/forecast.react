@@ -39,6 +39,7 @@ function App() {
   if (loaded) {
     return (
       <div>
+        <h1>Weather Search</h1>
         {form}
         <ul>
           <li> temperature:{Math.round(weather.temperature)}°C</li>
@@ -47,15 +48,64 @@ function App() {
           <li> Humidity:{Math.round(weather.Humidity)}%</li>
           <li> icon:{<img src={weather.icon} alt={weather.description} />}</li>
         </ul>
+        <p>
+          This file was coded by{" "}
+          <a
+            href="https://github.com/Alicianonkonyana"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Alicia
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/Alicianonkonyana/forecast.react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on Github
+          </a>
+          and{" "}
+          <a
+            href="https://app.netlify.com/sites/bright-mousse-c21890/overview"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Neflify
+          </a>
+        </p>
       </div>
     );
   } else {
     return (
       <div>
+        <h1>Weather Search</h1>
         {form}
         <p>
-          This file was coded by <a>Alicia</a> and is{" "}
-          <a>open-sourced on Github</a>and <a>hosted on Neflify</a>
+          This file was coded by{" "}
+          <a
+            href="https://github.com/Alicianonkonyana"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Alicia
+          </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/Alicianonkonyana/forecast.react"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on Github
+          </a>
+          and{" "}
+          <a
+            href="https://app.netlify.com/sites/bright-mousse-c21890/overview"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Neflify
+          </a>
         </p>
       </div>
     );
